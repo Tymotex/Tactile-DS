@@ -9,7 +9,7 @@ View my notes <a href="https://tymotex.github.io/DataStructures/">here</a>!
 ## Table of Contents
 
 -   [Interactive Linked List](#interactive-linked-list)
--   [Interactive BST](#interactive-bst)
+-   [Interactive Binary Search Tree](#interactive-bst)
 -   [Interactive AVL Tree](#interactive-avl)
 -   [Interactive Splay Tree](#interactive-splay)
 -   [Interactive Unweighted Graph (Directed and Undirected)](#interactive-unweighted-graph)
