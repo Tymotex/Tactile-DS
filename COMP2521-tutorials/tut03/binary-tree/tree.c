@@ -3,17 +3,9 @@
 #include <string.h>
 #include <stdbool.h> 
 #include "tree.h"
-#include "../../util/display/display.h"
+#include "../../../util/display/display.h"
 
 #define MAX_TREE_SIZE 64
- 
-
-
-
-
-
-
-
 
 /*
     Struct definition:
@@ -29,9 +21,16 @@
 
 // Goal: return the number of nodes in the tree
 int count(TreeNode *root) {
-    if (root == NULL) return 0;
-    return 1 + count(root->left) + count(root->right);
+    return -42;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -53,21 +52,8 @@ int max(int a, int b) {
 
 // Goal: return the height of the tree
 int height(TreeNode *root) {
-    if (root == NULL) {
-        return 0;
-    }
-    int leftH = height(root -> left);
-    int rightH = height(root -> right);
-    return 1 + max(leftH, rightH);
+    return -42;
 }
-
-
-
-
-
-
-
-
 
 
 
