@@ -3,13 +3,13 @@
 static void printArray(int array[], int size);
 
 void triple(int array[], int size) {
-    for (int i = 0; i < size; i += 2) {
+    for (int i = 0; i < size; i += 1) {
         array[i] *= 3;
     }
 }
 
 void square(int array[], int size) {
-    for (int i = 0; i < size; i += 2) {
+    for (int i = 0; i < size; i += 1) {
         array[i] *= array[i];
     }
 }

@@ -9,7 +9,7 @@ static void printArray(int array[], int size);
 //        be applied to each element of the array
 void transform(int array[], int size, int (*customFunction)(int)) {
     // Loops through the array and applies the custom function to every element in that array
-    for (int i = 0; i < size; i += 2) {
+    for (int i = 0; i < size; i += 1) {
         array[i] = customFunction(array[i]);
     }
 }
