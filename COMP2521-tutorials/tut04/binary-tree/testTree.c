@@ -4,9 +4,9 @@
 #include <stdbool.h>
 #include "tree-print.h"
 #include "tree.h"
-#include "../../util/menu-interface.h"
-#include "../../util/display/display.h"
-#include "../../util/utilities/processing.h"
+#include "../../../util/menu-interface.h"
+#include "../../../util/display/display.h"
+#include "../../../util/utilities/processing.h"
 
 #define MAX_COMMAND_SIZE 64
 
@@ -32,18 +32,11 @@ TreeNode *processCommand(TreeNode *root, char *command) {
     char *commandName = tokens[0];
     int numArgs = getNumTokens(tokens);
     char *token = commandName;
-
+    
     if (numArgs <= 0) {
     } else if (!commandName) {
         printInvalidCommand("Enter a valid command\n");
-    } else if (strcmp(commandName, "printHeightDiff") == 0) { 
-        // Format: printHeightDiff
-        if (numArgs != 1) {
-            printInvalidCommand("printHeightDiff command format: printHeightDiff\n");
-        } else {
-            printHeightDiff(root);
-        }
-    } else if (strcmp(commandName, "isHeightBalanced") == 0) { 
+    } else if (strcmp(commandName, "isheightbalanced") == 0) { 
         // Format: isHeightBalanced
         if (numArgs != 1) {
             printInvalidCommand("isHeightBalanced command format: isHeightBalanced\n");

@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdbool.h> 
 #include "tree.h"
-#include "../../util/display/display.h"
+#include "../../../util/display/display.h"
 
 #define MAX_TREE_SIZE 64
 
@@ -14,7 +14,7 @@ int max(int a, int b) {
     else return b;
 }
 
-// Goal: return the height of the tree
+// Returns the height of a tree
 int height(TreeNode *root) {
     if (root == NULL) {
         return 0;
@@ -26,54 +26,26 @@ int height(TreeNode *root) {
 
 
 
-
-
-
-// Smoler problems in this this bigger problem
-// 1. compute the height of a tree
-// 2. traversing the tree in postfix order (LRN)
-
-int printHeightDiff(TreeNode *root) {
-    if (root == NULL) {
-        return 0;
-    }
-
-    int leftH = printHeightDiff(root -> left);
-    int rightH = printHeightDiff(root -> right);
-    int diff = leftH - rightH;
-
-    printf("data: %d, diff:  %d\n", root -> value, diff);
-    return 1 + max(leftH, rightH);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#define NOT_HEIGHT_BALANCED -99
 
 int abs(int a) {
     if (a >= 0) return a;
     else return -a;
 }
 
-
-#define NOT_HEIGHT_BALANCED -99
-
+// Goal:
+//     If 'height balanced', return the height
+//     Else return NOT_HEIGHT_BALANCED
 int isHeightBalanced(TreeNode *root) {
-    printf("Implement me plz\n");
-    return 0;
+    return -42;
 }
+
+
+
+
+
+
+
 
 
 
