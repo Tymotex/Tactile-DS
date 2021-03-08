@@ -31,11 +31,11 @@ int cmpId(Record r1, Record r2) {
 }
 
 int myCmpId(Record r1, Record r2) {
-    return (r2->zid - r1->zid);
+    return -42;
 }
 
 int myCmpName(Record r1, Record r2) {
-    return strcmp(r2->name, r1->name);
+    return -42;
 }
 
 int main(void) {
