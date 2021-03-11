@@ -17,8 +17,8 @@ Record func(struct record students[], int size, int (*cmp)(Record, Record)) {
 
     if (size == 1) return retStudent;
 
-    for (int i = 1; i < size; i++) {
-        if (cmp(&students[i], retStudent) < 0) {
+    for (int i = 1; i < size; i++) {              
+        if (cmp(&students[i], retStudent) < 0) {     
             retStudent = &students[i];
         }
     }
@@ -43,7 +43,7 @@ int main(void) {
         { 15, "John" },
         { 32, "Mary" },
         { 12, "Rita" },
-        { 11, "Jack" },
+        { 20, "Jack" },
     }; 
 
     Record myRec1 = func(students, 4, cmpId);

@@ -14,6 +14,7 @@ void square(int array[], int size) {
     }
 }
 
+
 int main() {
     int myArray1[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 

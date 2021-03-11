@@ -24,7 +24,7 @@ void printLevelOrder(TreeNode *root);                     // levelorder
 void printGivenLevel(TreeNode *root, int level);          // level
 bool existsInTree(TreeNode *root, int targetValue);       // exists
 int getNumNodes(TreeNode *root);                          // count
-int getTreeHeight(TreeNode *root);                        // height
+int h(TreeNode *root);                                    // height
 int getNodeDepth(TreeNode *root, int targetValue);        // depth
 TreeNode *leftRotate(TreeNode *root, int targetValue);    // left
 TreeNode *rightRotate(TreeNode *root, int targetValue);   // right

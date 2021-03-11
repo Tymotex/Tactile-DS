@@ -180,7 +180,7 @@ TreeNode *processCommand(TreeNode *root, char *command) {
         if (numArgs != 1) {
             printInvalidCommand("Height command format: height\n");
         } else {
-            printf(" ➤ Height of the tree is: %d\n", getTreeHeight(root));
+            printf(" ➤ Height of the tree is: %d\n", h(root));
         }
     } else if (strcmp(commandName, "depth") == 0) {
         // Format: depth <node>
