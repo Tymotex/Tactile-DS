@@ -10,25 +10,19 @@
 /**
  * Given a tree and a value, inserts that value inside the tree. The
  * inserted value is then lifted up to the root by a sequence of rotations.
- * This involves calling the splay function after doing 
  */
 TreeNode *insertSplay(TreeNode *root, int insertValue) {
     if (root == NULL) {
-        TreeNode *newTreeNode = newNode(insertValue);
-        return newTreeNode;
+        return newNode(insertValue);
     }
 
     if (insertValue < root -> value) {
         root -> left = insertSplay(root -> left, insertValue); 
-        root = rotateRight(root);
+        // root = rotateRight(root);
     } else if (insertValue > root -> value) {
         root -> right = insertSplay(root -> right, insertValue);
-        root = rotateLeft(root);
-    } else {
-        printf("Value %d already exists in the tree\n", insertValue);
-        return root;
+        // root = rotateLeft(root);
     }
-    
     return root;
 }
 

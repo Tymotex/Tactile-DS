@@ -4,7 +4,7 @@
 #include <stdbool.h> 
 #include "tree.h"
 #include "tree-print.h"
-#include "../../util/display/display.h"
+#include "../../../util/display/display.h"
 
 #define MAX_TREE_SIZE 64
 #define LOCAL_STATE_HEADER "Local Tree Fix"
@@ -105,35 +105,28 @@ TreeNode *insertAVL(TreeNode *root, int value) {
         root -> left = insertAVL(root -> left, value); 
     } else if (value > root -> value) {
         root -> right = insertAVL(root -> right, value);
-    } else {
-        // Value already exists in the tree. Doing nothing
-        printColoured("red", "Value %d already exists in the tree\n", value);
-        return root;
     }
 
     // ===== AVL STUFF BELOW =====
     // 1. Insertion is done by this point. Now we'll update the height of this node
-    // updateHeight(root);
-    // int leftH = getHeight(root -> left);
-    // int rightH = getHeight(root -> right);
-    // root -> height = 1 + max(leftH, rightH);
+    int leftH = getHeight(root -> left);
+    int rightH = getHeight(root -> right);
+    root -> height = 1 + max(leftH, rightH);
 
     // 2. Rebalancing the tree if the insertion caused a height difference of 2 or -2:
-    // rebalanceAVL(root);
-    // if (leftH - rightH > 1) {
-    //     // Left subtree is taller than the right subtree by 2 levels
-    //     if (value > root -> left -> value) {
-    //         root -> left = leftRotate(root -> left);
-    //     }
-    //     root = rightRotate(root);
-    // } else if (rightH - leftH > 1) {
-    //     // Right subtree is taller than the left subtree by 2 levels
-    //     if (value < root -> right -> value) {
-    //         root -> right = rightRotate(root -> right);
-    //     }
-    //     root = leftRotate(root);
-    // } 
-
+    if (leftH - rightH > 1) {
+        // Left subtree is taller than the right subtree by 2 levels
+        if (value > root -> left -> value) {
+            root -> left = leftRotate(root -> left);
+        }
+        root = rightRotate(root);
+    } else if (rightH - leftH > 1) {
+        // Right subtree is taller than the left subtree by 2 levels
+        if (value < root -> right -> value) {
+            root -> right = rightRotate(root -> right);
+        }
+        root = leftRotate(root);
+    } 
     return root;
 }
 
