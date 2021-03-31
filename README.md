@@ -9,7 +9,7 @@ View my notes <a href="https://tymotex.github.io/DataStructures/">here</a>!
 ## Table of Contents
 
 -   [Interactive Linked List](#interactive-linked-list)
--   [Interactive BST](#interactive-bst)
+-   [Interactive Binary Search Tree](#interactive-bst)
 -   [Interactive AVL Tree](#interactive-avl)
 -   [Interactive Splay Tree](#interactive-splay)
 -   [Interactive Unweighted Graph (Directed and Undirected)](#interactive-unweighted-graph)
@@ -210,7 +210,7 @@ Implementation for each command is viewable in `graph.c`, `graph.h`, `graph-algo
 
 Interactive hash table written in C for storing key-value pairs.
 
-Implementation for each command is viewable in `hash-table.c` and `hash-table.h` in the `hash-table` directory. View source code <a href="https://github.com/Tymotex/DataStructures/tree/master/hash-table">here</a>.
+Implementation for each command is viewable in `hash-table.c` and `hash-table.h` in the `hash-table` directory. View source code <a href="https://github.com/Tymotex/DataStructures/tree/master/hash-table/hash-table.c">here</a>.
 
 ### Example Usage:
 

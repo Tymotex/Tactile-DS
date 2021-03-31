@@ -1,0 +1,6 @@
+help             - show commands available
+count            - prints the number of nodes in the tree
+height           - prints the height of the tree
+show             - shows the current tree state
+clear            - deletes the entire tree
+exit             - quit program

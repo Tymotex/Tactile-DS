@@ -1,0 +1,4 @@
+help                     - show commands available
+insert <nodes>           - inserts the given nodes with the AVL insertion algorithm
+isHeightBalanced         - shows the heights of all nodes in the tree
+exit                     - quit program
