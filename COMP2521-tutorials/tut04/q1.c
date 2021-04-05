@@ -31,11 +31,11 @@ int cmpId(Record r1, Record r2) {
 }
 
 int myCmpId(Record r1, Record r2) {
-    return -42;
+    return (r2->zid - r1->zid);
 }
 
 int myCmpName(Record r1, Record r2) {
-    return -42;
+    return strcmp(r2->name, r1->name);
 }
 
 int main(void) {
@@ -43,15 +43,15 @@ int main(void) {
         { 15, "John" },
         { 32, "Mary" },
         { 12, "Rita" },
-        { 20, "Jack" },
+        { 11, "Jack" },
     }; 
 
-    Record myRec1 = func(students, 4, cmpId);
-    RecordShow(myRec1);
+    // Record myRec1 = func(students, 4, cmpId);
+    // RecordShow(myRec1);
 
     // Record myRec2 = func(students, 4, myCmpId);
     // RecordShow(myRec2);
 
-    // Record myRec3 = func(students, 4, myCmpName);
-    // RecordShow(myRec3);
+    Record myRec3 = func(students, 4, myCmpName);
+    RecordShow(myRec3);
 }

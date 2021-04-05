@@ -24,7 +24,18 @@ void dfs(Graph g, int v) {
 
 static void dfsRecursive(Graph g, int src, bool *visited) {
     /* Implement recursive DFS here */
+    // 1. Print off the current source
+    printf("%d ", src);
 
+    // 2. Mark off the src as visited
+    visited[src] = true;
+
+    // 3. Loop through all the unvisited neighbours of src
+    for (int curr = 0; curr < g->nV; curr++) {
+        if (!visited[curr] && adjacent(g, src, curr)) {
+            dfsRecursive(g, curr, visited);
+        }
+    }
 }
 
 
