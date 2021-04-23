@@ -4,7 +4,7 @@ This is a collection of implementations and interactive visualisers of classic d
 
 This repository contains the backend code for the web terminal interface <strong><a href="https://www.data-structures.xyz">here</a></strong>. Use incognito mode to prevent any chrome extensions from interfering with the formatting and avoid resizing the window.
 
-View my notes <a href="https://tymotex.github.io/DataStructures/">here</a>!
+View my notes <a href="https://tymotex.github.io/Tactile-DS/">here</a>!
 
 ## Table of Contents
 
