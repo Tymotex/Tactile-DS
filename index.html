@@ -2,15 +2,16 @@
 <html>
   <head>
     <title>Tactile DS</title>
-    <style>body, #terminal {position: absolute; height: 100%; width: 100%; margin: 0px;}</style>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/assets/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/xterm.css" />
+    <link rel="stylesheet" href="./css/xterm_customize.css" />
     <style>
       body {
         overflow: hidden;
       }
       #header {
-        background: linear-gradient(#1e0041, #0f0f0f);
+        background: linear-gradient(#1e0041, #000000);
         font-family: 'Roboto', sans-serif;
         padding: 1px;
         color: white;
@@ -97,8 +98,8 @@
       </div>
     </div>
     <div id="terminal"></div>
-    <script src="./js/hterm.js"></script>
     <script src="./auth_token.js"></script>
-    <script src="./js/gotty.js"></script>
+    <script src="./config.js"></script>
+    <script src="./js/gotty-bundle.js"></script>
   </body>
 </html>
