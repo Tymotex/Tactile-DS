@@ -29,7 +29,22 @@ int abs(int a) {
 //     If 'height balanced', return the height
 //     Else return NOT_HEIGHT_BALANCED
 int isHeightBalanced(TreeNode *root) {
-    return -42;
+    if (root == NULL) {
+        return 0;
+    }
+    if (abs(h(root->left) - h(root->right)) <= 1) {
+        int leftIsBalanced = isHeightBalanced(root->left);
+        int rightIsBalanced = isHeightBalanced(root->right);
+
+        if (leftIsBalanced == NOT_HEIGHT_BALANCED || rightIsBalanced == NOT_HEIGHT_BALANCED) {
+            return NOT_HEIGHT_BALANCED;
+        } else {
+            return h(root);
+        }
+
+    } else {
+        return NOT_HEIGHT_BALANCED;
+    }
 }
 
 

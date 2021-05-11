@@ -3,14 +3,29 @@
 static void printArray(int array[], int size);
 
 void triple(int array[], int size) {
-    for (int i = 0; i < size; i += 1) {
+    for (int i = 0; i < size; i += 2) {
         array[i] *= 3;
     }
 }
 
 void square(int array[], int size) {
-    for (int i = 0; i < size; i += 1) {
+    for (int i = 0; i < size; i += 2) {
         array[i] *= array[i];
+    }
+}
+
+// TODO: write a function that multiplies every element by -1
+void negate(int array[], int size) {
+    for (int i = 0; i < size; i += 2) {
+        array[i] *= -1;
+    }
+}
+
+// TODO: write a function that adds 10 and then takes the cube of that result for every element
+void weirdFunc(int array[], int size) {
+    for (int i = 0; i < size; i += 2) {
+        array[i] += 10;
+        array[i] = array[i] * array[i] * array[i];
     }
 }
 

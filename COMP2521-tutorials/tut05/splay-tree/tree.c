@@ -11,6 +11,7 @@
  * Given a tree and a value, inserts that value inside the tree. The
  * inserted value is then lifted up to the root by a sequence of rotations.
  */
+// Question: What is the time complexity of this insertion algorithm?
 TreeNode *insertSplay(TreeNode *root, int insertValue) {
     if (root == NULL) {
         return newNode(insertValue);
@@ -18,10 +19,10 @@ TreeNode *insertSplay(TreeNode *root, int insertValue) {
 
     if (insertValue < root -> value) {
         root -> left = insertSplay(root -> left, insertValue); 
-        // root = rotateRight(root);
+        root = rotateRight(root);
     } else if (insertValue > root -> value) {
         root -> right = insertSplay(root -> right, insertValue);
-        // root = rotateLeft(root);
+        root = rotateLeft(root);
     }
     return root;
 }
