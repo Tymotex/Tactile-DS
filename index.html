@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GoTTY</title>
+    <style>body, #terminal {position: absolute; height: 100%; width: 100%; margin: 0px;}</style>
+    <link rel="icon" type="image/png" href="https://github.com/Tymotex/Tactile-DS/blob/master/assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+      body {
+        overflow: hidden;
+      }
+      #header {
+        background: linear-gradient(#1e0041, #0f0f0f);
+        font-family: 'Roboto', sans-serif;
+        padding: 1px;
+        color: white;
+        border
+      }
+      #main-title {
+        text-align: center;
+        font-size: 20px;
+      }
+      #title-logo {
+        height: 20px;
+      }
+      #description {
+        color: rgb(165, 165, 165);
+        text-align: center;
+      }
+      #terminal-icon {
+        height: 13px;
+      }
+
+      #links {
+        color: rgb(165, 165, 165);
+        font-size: 20px;
+        text-align: center;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+
+      #youtube-link {
+        display: inline;
+      }
+      #youtube-link img {
+        height: 30px;
+      }
+      #youtube-link img:hover {
+        opacity: 0.5;
+      }
+      
+      #github-link {
+        display: inline;
+      }
+      #github-link img {
+        height: 30px;
+      }
+      #github-link img:hover {
+        opacity: 0.5;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h3 id="main-title">
+        Structs.sh 
+        <img 
+          id="title-logo"
+          src="https://github.com/Tymotex/Tactile-DS/blob/master/assets/logo.png" 
+        /> 
+      </h3> 
+      <p id="description">
+        An interactive shell for data structures and algorithms visualisation.
+        <img 
+          id="terminal-icon"
+          src="https://github.com/Tymotex/Tactile-DS/blob/master/assets/terminal-icon.png"
+        />
+      </p>
+      <div id="links">
+        <div id="youtube-link">
+          <a href="https://www.youtube.com/watch?v=iSJL-9pe-PY&t=5s" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://github.com/Tymotex/Tactile-DS/blob/master/assets/youtube.png" 
+            />
+          </a>
+        </div>
+        <div id="github-link">
+          <a href="https://github.com/Tymotex/DataStructures" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://github.com/Tymotex/Tactile-DS/blob/master/assets/github.png" 
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="terminal"></div>
+    <script src="./js/hterm.js"></script>
+    <script src="./auth_token.js"></script>
+    <script src="./js/gotty.js"></script>
+  </body>
+</html>
