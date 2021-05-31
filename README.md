@@ -91,7 +91,7 @@ When connected to CSE servers, just copy and paste these commands onto the termi
 
 Instructions for testing/deploying the web-based version:
 
-1. `sh server.sh --start` - runs the terminal sharing web service. Access at `localhost:8080`. Use `nohup sh server.sh &` to start the server as a background process
+1. `sh server.sh --start` - runs the terminal sharing web service. Access at `localhost:8080`. Use `nohup sh server.sh --start &` to start the server as a background process
 2. `sh server.sh --stop` - kills the web terminal server process
 
 <a name="interactive-linked-list">
