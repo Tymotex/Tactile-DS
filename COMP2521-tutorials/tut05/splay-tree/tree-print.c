@@ -4,7 +4,7 @@
 #include <string.h>
 #include "tree.h"
 #include "tree-print.h"
-#include "../util/display/display.h"
+#include "../../../util/display/display.h"
 
 #define MAX_HEIGHT 1000
 #define INFINITY (1<<20)

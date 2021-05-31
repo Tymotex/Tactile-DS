@@ -3,5 +3,5 @@
 
 struct Node { 
     int data[3];      // Array of values in this node
-    Node *child[4];   // An array of child nodes 
+    Node *child[4];   // An array of pointers to child nodes 
 };

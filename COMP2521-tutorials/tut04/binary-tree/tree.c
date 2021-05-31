@@ -3,77 +3,56 @@
 #include <string.h>
 #include <stdbool.h> 
 #include "tree.h"
-#include "../../util/display/display.h"
+#include "../../../util/display/display.h"
 
 #define MAX_TREE_SIZE 64
 
 
-// Given two numbers a and b, returns the one that's larger
-int max(int a, int b) {
-    if (a > b) return a;
-    else return b;
+/**
+ * Given a tree, computes and returns the height of that tree
+ */
+int h(TreeNode *root) {
+    return (root == NULL) ? 0 : 1 + max(h(root -> left), h(root -> right));
 }
 
-// Goal: return the height of the tree
-int height(TreeNode *root) {
-    if (root == NULL) {
-        return 0;
-    }
-    int leftH = height(root -> left);
-    int rightH = height(root -> right);
-    return 1 + max(leftH, rightH);
-}
+#define NOT_HEIGHT_BALANCED -99
 
-
-
-
-
-
-// Smoler problems in this this bigger problem
-// 1. compute the height of a tree
-// 2. traversing the tree in postfix order (LRN)
-
-int printHeightDiff(TreeNode *root) {
-    if (root == NULL) {
-        return 0;
-    }
-
-    int leftH = printHeightDiff(root -> left);
-    int rightH = printHeightDiff(root -> right);
-    int diff = leftH - rightH;
-
-    printf("data: %d, diff:  %d\n", root -> value, diff);
-    return 1 + max(leftH, rightH);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+ * Given an integer, returns the absolute value
+ */
 int abs(int a) {
     if (a >= 0) return a;
     else return -a;
 }
 
-
-#define NOT_HEIGHT_BALANCED -99
-
+// Goal:
+//     If 'height balanced', return the height
+//     Else return NOT_HEIGHT_BALANCED
 int isHeightBalanced(TreeNode *root) {
-    printf("Implement me plz\n");
-    return 0;
+    if (root == NULL) {
+        return 0;
+    }
+    if (abs(h(root->left) - h(root->right)) <= 1) {
+        int leftIsBalanced = isHeightBalanced(root->left);
+        int rightIsBalanced = isHeightBalanced(root->right);
+
+        if (leftIsBalanced == NOT_HEIGHT_BALANCED || rightIsBalanced == NOT_HEIGHT_BALANCED) {
+            return NOT_HEIGHT_BALANCED;
+        } else {
+            return h(root);
+        }
+
+    } else {
+        return NOT_HEIGHT_BALANCED;
+    }
 }
+
+
+
+
+
+
+
 
 
 
@@ -120,6 +99,15 @@ TreeNode *insert(TreeNode *root, int value) {
     return root;
 }
 
+// Returns the height of a tree
+int height(TreeNode *root) {
+    if (root == NULL) {
+        return 0;
+    }
+    int leftH = height(root -> left);
+    int rightH = height(root -> right);
+    return 1 + (leftH > rightH) ? (leftH) : (rightH);
+}
 /**
  * Inorder printing: left, root, right
  */
@@ -165,7 +153,7 @@ void printPostOrder(TreeNode *root) {
  * with the help of a queue but recursion is nicer
  */
 void printLevelOrder(TreeNode *root) {
-    int height = getTreeHeight(root); 
+    int height = h(root); 
     for (int i = 1; i <= height; i++) {
         printf("Level %d: ", i);
         printGivenLevel(root, i); 
@@ -211,12 +199,6 @@ int getNumNodes(TreeNode *root) {
     return (root == NULL) ? 0 : 1 + getNumNodes(root -> left) + getNumNodes(root -> right);
 }
 
-/**
- * Given a tree, computes and returns the height of that tree
- */
-int getTreeHeight(TreeNode *root) {
-    return (root == NULL) ? 0 : 1 + max(getTreeHeight(root -> left), getTreeHeight(root -> right));
-}
 
 /**
  * Given a tree and a target value, finds the node with that target value
@@ -379,4 +361,11 @@ void freeTree(TreeNode *root) {
     freeTree(root -> left);
     freeTree(root -> right);
     free(root);
+}
+
+
+// Given two numbers a and b, returns the one that's larger
+static int max(int a, int b) {
+    if (a > b) return a;
+    else return b;
 }

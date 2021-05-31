@@ -10,12 +10,11 @@
 /**
  * Given a tree and a value, inserts that value inside the tree. The
  * inserted value is then lifted up to the root by a sequence of rotations.
- * This involves calling the splay function after doing 
  */
+// Question: What is the time complexity of this insertion algorithm?
 TreeNode *insertSplay(TreeNode *root, int insertValue) {
     if (root == NULL) {
-        TreeNode *newTreeNode = newNode(insertValue);
-        return newTreeNode;
+        return newNode(insertValue);
     }
 
     if (insertValue < root -> value) {
@@ -24,11 +23,7 @@ TreeNode *insertSplay(TreeNode *root, int insertValue) {
     } else if (insertValue > root -> value) {
         root -> right = insertSplay(root -> right, insertValue);
         root = rotateLeft(root);
-    } else {
-        printf("Value %d already exists in the tree\n", insertValue);
-        return root;
     }
-    
     return root;
 }
 

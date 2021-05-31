@@ -4,9 +4,9 @@
 #include <stdbool.h>
 #include "tree-print.h"
 #include "tree.h"
-#include "../../util/menu-interface.h"
-#include "../../util/display/display.h"
-#include "../../util/utilities/processing.h"
+#include "../../../util/menu-interface.h"
+#include "../../../util/display/display.h"
+#include "../../../util/utilities/processing.h"
 
 #define MAX_COMMAND_SIZE 64
 #define STATE_HEADER "Tree State"
