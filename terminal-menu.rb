@@ -11,7 +11,7 @@ end
 begin
   choices = ["Linked List", "Trees", "Graphs", "Heap", "Hash Table", "Sorting Algorithms Timing", "Exit".red]
     choices.map { |choice| choice.blue }
-    selection = prompt.select("Select a data structure: (see the implementations here: https://github.com/Tymotex/DataStructures)".yellow, choices)
+    selection = prompt.select("See the implementations here: https://github.com/Tymotex/DataStructures\nWatch a demo here: https://youtu.be/iSJL-9pe-PY\nSelect a data structure:".yellow, choices)
     puts "Starting: %s\n".red % [selection]
     case selection
     when "Linked List"
