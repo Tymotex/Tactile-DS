@@ -36,7 +36,7 @@ Watch a video demo <strong><a href="https://www.youtube.com/watch?v=iSJL-9pe-PY"
 
 When connected to CSE servers, just copy and paste these commands onto the terminal and hit enter after pasting each one:
 
-1. `git clone https://github.com/Tymotex/DataStructures.git && cd DataStructures`
+1. `git clone https://github.com/Tymotex/Tactile-DS.git && cd Tactile-DS`
 2. `./util/scripts/make_recurse.sh`
 3. You now have access to all the interactive data structures. The commands to run each of them are:
     - **_Linked Lists_:**
@@ -81,7 +81,7 @@ When connected to CSE servers, just copy and paste these commands onto the termi
 
 ### Setup for Development:
 
-1. `git clone https://github.com/Tymotex/DataStructures.git && cd DataStructures` - downloads this repository and changes directory to the project root directory
+1. `git clone https://github.com/Tymotex/Tactile-DS.git && cd Tactile-DS` - downloads this repository and changes directory to the project root directory
 2. <a href="https://computingforgeeks.com/how-to-share-your-linux-terminal-in-web-browser-with-gotty/">Install GoTTy</a>
 3. Run `bundle install` in the root directory to install Ruby dependencies. See the <a href="https://bundler.io/">ruby bundler</a>. This project uses Ruby v2.7.0
 4. `./util/scripts/make_recurse.sh` - recursively runs `make` on all subdirectories. This automatically compiles all the data structures
@@ -100,12 +100,12 @@ Instructions for testing/deploying the web-based version:
 
 An interactive linked list builder written in C. Supports standard operations (iteratively and recursively) such as insertion, deletion, searching, sorting and reversing.
 
-Implementation for each command is viewable in `linked-list.c` and `linked-list.h` in the `linked-list/iterative-version` and `linked-list/recursive-version` directories. View the source code <a href="https://github.com/Tymotex/DataStructures/blob/master/linked-list/iterative-version/linked-list.c">here</a>.
+Implementation for each command is viewable in `linked-list.c` and `linked-list.h` in the `linked-list/iterative-version` and `linked-list/recursive-version` directories. View the source code <a href="https://github.com/Tymotex/Tactile-DS/blob/master/linked-list/iterative-version/linked-list.c">here</a>.
 
 ### Example Usage:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/linked-list-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/linked-list-1.png" width="100%" />
 </p>
 
 <a name="interactive-bst"/>
@@ -114,13 +114,13 @@ Implementation for each command is viewable in `linked-list.c` and `linked-list.
 
 An interactive binary search tree builder written in C. Supports standard operations such as insertion, deletion, rotation, and in-order, pre-order, post-order and level-order printing.
 
-Implementation for each command is viewable in `tree.c` and `tree.h` in the `binary-tree` directory. View the source code <a href="https://github.com/Tymotex/DataStructures/blob/master/binary-tree/tree.c">here</a>.
+Implementation for each command is viewable in `tree.c` and `tree.h` in the `binary-tree` directory. View the source code <a href="https://github.com/Tymotex/Tactile-DS/blob/master/binary-tree/tree.c">here</a>.
 
 ### Example Usage:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/binary-tree-1.png" width="100%" />
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/binary-tree-2.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/binary-tree-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/binary-tree-2.png" width="100%" />
 </p>
 
 <a name="interactive-avl"/>
@@ -129,13 +129,13 @@ Implementation for each command is viewable in `tree.c` and `tree.h` in the `bin
 
 An interactive AVL tree builder written in C. Supports AVL insertion, AVL deletion and commands to print the height of each node and the height balance of each node.
 
-Implementation for each command is viewable in `tree.c` and `tree.h` in the `avl-tree` directory. View the source code <a href="https://github.com/Tymotex/DataStructures/blob/master/avl-tree/tree.c">here</a>.
+Implementation for each command is viewable in `tree.c` and `tree.h` in the `avl-tree` directory. View the source code <a href="https://github.com/Tymotex/Tactile-DS/blob/master/avl-tree/tree.c">here</a>.
 
 ### Example Usage:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/avl-tree-1.png" width="100%" />
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/avl-tree-2.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/avl-tree-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/avl-tree-2.png" width="100%" />
 </p>
 
 <a name="interactive-splay"/>
@@ -144,12 +144,12 @@ Implementation for each command is viewable in `tree.c` and `tree.h` in the `avl
 
 An interactive splay tree builder written in C. Splay trees differ from regular BSTs in that searching and inserting a value involves bringing the target/inserted node to the root.
 
-Implementation for each command is viewable in `tree.c` and `tree.h` in the `splay-tree` directory. View the source code <a href="https://github.com/Tymotex/DataStructures/blob/master/splay-tree/tree.c">here</a>.
+Implementation for each command is viewable in `tree.c` and `tree.h` in the `splay-tree` directory. View the source code <a href="https://github.com/Tymotex/Tactile-DS/blob/master/splay-tree/tree.c">here</a>.
 
 ### Example Usage:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/splay-tree-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/splay-tree-1.png" width="100%" />
 </p>
 
 <a name="interactive-unweighted-graph"/>
@@ -160,22 +160,22 @@ Interactive unweighted directed/undirected graph builder written in C.
 
 Implementation for each command is viewable in `graph.c`, `graph.h`, `graph-algos.c` and `graph-algos.h` in the `unweighted-graph` and `unweighted-digraph` directories.
 
--   View source code for unweighted graphs <a href="https://github.com/Tymotex/DataStructures/tree/master/unweighted-graph/graph-algos.c">algorithms here</a> and <a href="https://github.com/Tymotex/DataStructures/blob/master/unweighted-graph/graph.c">basic functions here</a>
--   View source code for unweighted digraphs <a href="https://github.com/Tymotex/DataStructures/blob/master/unweighted-digraph/graph-algos.c">algorithms here</a> and <a href="https://github.com/Tymotex/DataStructures/blob/master/unweighted-digraph/graph.c">basic functions here</a>
+-   View source code for unweighted graphs <a href="https://github.com/Tymotex/Tactile-DS/tree/master/unweighted-graph/graph-algos.c">algorithms here</a> and <a href="https://github.com/Tymotex/Tactile-DS/blob/master/unweighted-graph/graph.c">basic functions here</a>
+-   View source code for unweighted digraphs <a href="https://github.com/Tymotex/Tactile-DS/blob/master/unweighted-digraph/graph-algos.c">algorithms here</a> and <a href="https://github.com/Tymotex/Tactile-DS/blob/master/unweighted-digraph/graph.c">basic functions here</a>
 
 ### Example Usage:
 
 #### Digraph:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/unweighted-digraph-1.png" width="100%" />
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/unweighted-digraph-2.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/unweighted-digraph-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/unweighted-digraph-2.png" width="100%" />
 </p>
 
 #### Undirected Graph:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/unweighted-graph-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/unweighted-graph-1.png" width="100%" />
 </p>
 
 <a name="interactive-weighted-graph"/>
@@ -186,22 +186,22 @@ Interactive weighted directed/undirected graph builder written in C. Implements 
 
 Implementation for each command is viewable in `graph.c`, `graph.h`, `graph-algos.c`, `graph-algos.h`, `dijkstra.c` and `dijkstra.h` in the `weighted-graph` and `weighted-digraph` directories.
 
--   View source code for weighted graphs <a href="https://github.com/Tymotex/DataStructures/blob/master/weighted-graph/graph-algos.c">algorithms here</a>, <a href="https://github.com/Tymotex/DataStructures/blob/master/weighted-graph/graph.c">basic functions here</a> and <a href="https://github.com/Tymotex/DataStructures/blob/master/weighted-graph/dijkstra.c">Dijkstra's algorithm here</a>
--   View source code for weighted digraphs <a href="https://github.com/Tymotex/DataStructures/blob/master/weighted-digraph/graph-algos.c">algorithms here</a>, <a href="https://github.com/Tymotex/DataStructures/blob/master/weighted-digraph/graph.c">basic functions here</a> and <a href="https://github.com/Tymotex/DataStructures/blob/master/weighted-digraph/dijkstra.c">Dijkstra's algorithm here</a>
+-   View source code for weighted graphs <a href="https://github.com/Tymotex/Tactile-DS/blob/master/weighted-graph/graph-algos.c">algorithms here</a>, <a href="https://github.com/Tymotex/Tactile-DS/blob/master/weighted-graph/graph.c">basic functions here</a> and <a href="https://github.com/Tymotex/Tactile-DS/blob/master/weighted-graph/dijkstra.c">Dijkstra's algorithm here</a>
+-   View source code for weighted digraphs <a href="https://github.com/Tymotex/Tactile-DS/blob/master/weighted-digraph/graph-algos.c">algorithms here</a>, <a href="https://github.com/Tymotex/Tactile-DS/blob/master/weighted-digraph/graph.c">basic functions here</a> and <a href="https://github.com/Tymotex/Tactile-DS/blob/master/weighted-digraph/dijkstra.c">Dijkstra's algorithm here</a>
 
 ### Example Usage:
 
 #### Digraph:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/weighted-digraph-1.png" width="100%" />
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/weighted-digraph-2.png" width="42%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/weighted-digraph-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/weighted-digraph-2.png" width="42%" />
 </p>
 
 #### Undirected Graph:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/weighted-graph-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/weighted-graph-1.png" width="100%" />
 </p>
 
 <a name="interactive-hash"/>
@@ -210,12 +210,12 @@ Implementation for each command is viewable in `graph.c`, `graph.h`, `graph-algo
 
 Interactive hash table written in C for storing key-value pairs.
 
-Implementation for each command is viewable in `hash-table.c` and `hash-table.h` in the `hash-table` directory. View source code <a href="https://github.com/Tymotex/DataStructures/tree/master/hash-table/hash-table.c">here</a>.
+Implementation for each command is viewable in `hash-table.c` and `hash-table.h` in the `hash-table` directory. View source code <a href="https://github.com/Tymotex/Tactile-DS/tree/master/hash-table/hash-table.c">here</a>.
 
 ### Example Usage:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/hash-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/hash-1.png" width="100%" />
 </p>
 
 <a name="interactive-heap"/>
@@ -224,12 +224,12 @@ Implementation for each command is viewable in `hash-table.c` and `hash-table.h`
 
 Interactive max heap table written in C.
 
-Implementation for each command is viewable in `heap.c` and `heap.h` in the `heap` directory. View source code <a href="https://github.com/Tymotex/DataStructures/blob/master/heap/heap.c">here</a>.
+Implementation for each command is viewable in `heap.c` and `heap.h` in the `heap` directory. View source code <a href="https://github.com/Tymotex/Tactile-DS/blob/master/heap/heap.c">here</a>.
 
 ### Example Usage:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/heap-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/heap-1.png" width="100%" />
 </p>
 
 <a name="interactive-sort"/>
@@ -238,10 +238,10 @@ Implementation for each command is viewable in `heap.c` and `heap.h` in the `hea
 
 A collection of classic sort algorithms written in C. Timing data is shown for each sort algorithm used.
 
-Implementation for each command is viewable in `sort.c` and `sort.h` in the `sorting-algos` directory. View source code <a href="https://github.com/Tymotex/DataStructures/blob/master/sorting-algos/sort.c">here</a>.
+Implementation for each command is viewable in `sort.c` and `sort.h` in the `sorting-algos` directory. View source code <a href="https://github.com/Tymotex/Tactile-DS/blob/master/sorting-algos/sort.c">here</a>.
 
 ### Example Usage:
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/Tymotex/DataStructures/master/Images/showcase/sort-1.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tymotex/Tactile-DS/master/Images/showcase/sort-1.png" width="100%" />
 </p>

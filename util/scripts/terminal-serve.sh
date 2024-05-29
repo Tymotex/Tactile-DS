@@ -8,7 +8,7 @@ make_recurse terminal-menu > /dev/null
 make_recurse ../../
 
 gotty -w --config ./.gotty-config --title-format "Data Structures & Algorithms" \
-    '../terminal-menu/bin/menu' -c '/home/tim/DataStructures/util/terminal-menu/.menu-options'
+    '../terminal-menu/bin/menu' -c '/home/tim/Tactile-DS/util/terminal-menu/.menu-options'
 # TODO: NEED TO MAKE THE PATH RELATIVE, BUT LOOKS LIKE BMENU DOESN'T SUPPORT IT. WORKAROUND?
 # Idea: have a config file, but write it to a file in ~/ directory
 

@@ -14,7 +14,7 @@
 #include "menu.h"
 
 
-#define NAME_EXTENSION     "(source code: github.com/Tymotex/DataStructures)"
+#define NAME_EXTENSION     "(source code: github.com/Tymotex/Tactile-DS)"
 #define INITIAL_PROMPT     "Press any key to continue!"
 
 #define KEY_ENTER   10          // enter key
