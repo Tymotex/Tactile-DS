@@ -92,7 +92,7 @@ void deleteFromHashTable(HashTable hashTable, Key key) {
         hashIndex = (hashIndex + 1) % hashTable -> numSlots;
     }
     freeItem(curr);
-    hashTable -> items[hashIndex] = DELETED;
+    hashTable -> items[hashIndex] = (Item)DELETED;
     hashTable -> numItems--;
     printColoured("cyan", " ➤ Deleted item with key \"%s\" from the hash table\n", key);  
 }

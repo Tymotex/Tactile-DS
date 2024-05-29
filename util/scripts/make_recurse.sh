@@ -4,7 +4,7 @@
 
 targetDirectory=$1
 makeArg=$2
-makefiles=$(find $targetDirectory | egrep 'Makefile$')
+makefiles=$(find $targetDirectory | grep -E 'Makefile$')
 cwd=$(pwd)
 for makefile in $makefiles; do
     makeDir=$(echo $makefile | sed 's/\/Makefile$//g')
