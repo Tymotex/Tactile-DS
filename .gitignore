@@ -7,8 +7,9 @@
 # Unignore all dirs
 !*/
 
-# Unignore Gemfile
+# Unignore specific files
 !Gemfile
+!Dockerfile
 
 ### Above combination will ignore all files without extension ###
 
