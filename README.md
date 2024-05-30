@@ -79,7 +79,9 @@ When connected to CSE servers, just copy and paste these commands onto the termi
 
 ---
 
-### Setup for Development:
+### Running for Development:
+
+To get Tactile-DS running locally:
 
 1. `git clone https://github.com/Tymotex/Tactile-DS.git && cd Tactile-DS` - downloads this repository and changes directory to the project root directory
 2. <a href="https://computingforgeeks.com/how-to-share-your-linux-terminal-in-web-browser-with-gotty/">Install GoTTy</a>
@@ -93,6 +95,17 @@ Instructions for testing/deploying the web-based version:
 
 1. `sh server.sh --start` - runs the terminal sharing web service. Access at `localhost:8080`. Use `nohup sh server.sh --start &` to start the server as a background process
 2. `sh server.sh --stop` - kills the web terminal server process
+
+### Running via Docker
+
+Alternatively, run the following commands to run Tactile-DS in a Docker
+container.
+```sh
+git clone https://github.com/Tymotex/Tactile-DS.git
+cd Tactile-DS
+docker build -t tactile-ds
+docker run -p 8080:8080 tactile-ds
+```
 
 <a name="interactive-linked-list">
 
