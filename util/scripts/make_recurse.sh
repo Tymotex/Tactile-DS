@@ -3,13 +3,12 @@
 # Usage: ./make_recurse <target directory> [make options]  
 
 TARGET_DIR=$1
-MAKE_ARG=$2
 MAKEFILES=$(find "$TARGET_DIR" | grep -E 'Makefile$')
 CWD=$(pwd)
 
 for makefile in $MAKEFILES; do
     make_dir=$(echo "$makefile" | sed 's/\/Makefile$//g')
-    echo "Running 'make clean' and 'make $MAKE_ARG' in: $make_dir"
+    echo "Running 'make clean' and 'make' in: $make_dir"
 
     make_dir="$CWD/$make_dir"
     if [ ! -d "$make_dir" ]; then
@@ -24,7 +23,7 @@ for makefile in $MAKEFILES; do
         echo " → 'make clean' Failed"
         exit 1
     fi
-    if make "$MAKE_ARG" > /dev/null ; then
+    if make > /dev/null ; then
         echo " → 'make' Succeeded"
     else 
         echo " → 'make' Failed"
