@@ -2,7 +2,9 @@
 
 This is a collection of implementations and interactive visualisers of classic data structures and algorithms in C.
 
-This repository contains the backend code for the web terminal interface <strong><a href="https://www.data-structures.xyz">here</a></strong>. Use incognito mode to prevent any chrome extensions from interfering with the formatting and avoid resizing the window.
+This repository contains the backend code for the web terminal interface <strong><a href="https://www.data-structures.xyz">here</a></strong>.
+
+> Use incognito mode to prevent any chrome extensions from interfering with the formatting and avoid resizing the window.
 
 View my notes <a href="https://tymotex.github.io/Tactile-DS/">here</a>!
 
@@ -28,16 +30,12 @@ Watch a video demo <strong><a href="https://www.youtube.com/watch?v=iSJL-9pe-PY"
 
 ## Setup Instructions
 
----
-
-<h3 style="color: yellow">
-  Simple Setup for COMP2521:
-</h3>
+### Simple Setup for COMP2521
 
 When connected to CSE servers, just copy and paste these commands onto the terminal and hit enter after pasting each one:
 
 1. `git clone https://github.com/Tymotex/Tactile-DS.git && cd Tactile-DS`
-2. `./util/scripts/make_recurse.sh`
+2. `./util/scripts/make_recurse.sh .`
 3. You now have access to all the interactive data structures. The commands to run each of them are:
     - **_Linked Lists_:**
         1. `cd linked-list/iterative-version` or `cd linked-list/recursive-version`
@@ -79,7 +77,7 @@ When connected to CSE servers, just copy and paste these commands onto the termi
 
 ---
 
-### Running for Development:
+### Running for Development
 
 To get Tactile-DS running locally:
 
@@ -89,14 +87,14 @@ To get Tactile-DS running locally:
 4. `./util/scripts/make_recurse.sh` - recursively runs `make` on all subdirectories. This automatically compiles all the data structures
 5. `ruby terminal-menu.rb` - starts the selection menu where all the interactive visualisers can be accessed
 
-#### Web Deployment:
+#### Web Deployment
 
 Instructions for testing/deploying the web-based version:
 
 1. `sh server.sh --start` - runs the terminal sharing web service. Access at `localhost:8080`. Use `nohup sh server.sh --start &` to start the server as a background process
 2. `sh server.sh --stop` - kills the web terminal server process
 
-### Running via Docker
+### Running via Docker (Recommended)
 
 Alternatively, run the following commands to run Tactile-DS in a Docker
 container.

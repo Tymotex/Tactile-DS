@@ -13,7 +13,6 @@
 
 ### Above combination will ignore all files without extension ###
 
-
 deprecated
 *.o
 .vscode/

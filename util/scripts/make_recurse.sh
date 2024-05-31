@@ -9,7 +9,7 @@ CWD=$(pwd)
 
 for makefile in $MAKEFILES; do
     make_dir=$(echo "$makefile" | sed 's/\/Makefile$//g')
-    echo "Running 'make $MAKE_ARG' in: $make_dir"
+    echo "Running 'make clean' and 'make $MAKE_ARG' in: $make_dir"
 
     make_dir="$CWD/$make_dir"
     if [ ! -d "$make_dir" ]; then
@@ -18,9 +18,16 @@ for makefile in $MAKEFILES; do
     fi
     cd "$make_dir" || exit 1
 
-    if make "$MAKE_ARG" > /dev/null 2> /dev/null; then
-        echo " → Succeeded"
+    if make clean > /dev/null; then
+        echo " → 'make clean' Succeeded"
+    else
+        echo " → 'make clean' Failed"
+        exit 1
+    fi
+    if make "$MAKE_ARG" > /dev/null ; then
+        echo " → 'make' Succeeded"
     else 
-        echo " → Failed"
+        echo " → 'make' Failed"
+        exit 1
     fi
 done
